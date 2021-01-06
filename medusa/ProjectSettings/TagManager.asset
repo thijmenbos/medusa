@@ -38,12 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Player
-    uniqueID: 645806667
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Ground
     uniqueID: 2886440961
+    locked: 0
+  - name: Player
+    uniqueID: 645806667
     locked: 0
