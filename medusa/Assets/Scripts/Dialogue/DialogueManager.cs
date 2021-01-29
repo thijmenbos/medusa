@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject dialogueUI;
+    public GameObject npcUI;
+    public GameObject npc;
 
     public Text nameText;
     public Text dialogueText;
@@ -18,6 +20,9 @@ public class DialogueManager : MonoBehaviour
 
     public void startDialogue (Dialogue dialogue)
     {
+        npc = dialogue.NPC;
+        npc.SetActive(true);
+
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -26,7 +31,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-
+        
         displayNextSentence();
     }
 
@@ -55,5 +60,6 @@ public class DialogueManager : MonoBehaviour
     public void endDialogue()
     {
         dialogueUI.SetActive(false);
+        npc.SetActive(false);
     }
 }
