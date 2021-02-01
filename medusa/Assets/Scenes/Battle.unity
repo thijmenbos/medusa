@@ -353,7 +353,7 @@ MonoBehaviour:
   enemySpawn3: {fileID: 1504508463}
   currentPhaseText: {fileID: 368740955}
   state: 0
-  whatBattle: 1
+  whatBattle: 0
 --- !u!4 &1156636410
 Transform:
   m_ObjectHideFlags: 0
